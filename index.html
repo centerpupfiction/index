@@ -11,13 +11,46 @@ body {
     color: #FFFFFF;
     font-family: 'Exo 2', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 20px 220px;
     text-transform: lowercase;
     animation: fadeIn 1.5s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #2023BB;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    margin-bottom: 20px;
+}
+.sidebar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FFB6C1;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    background: rgba(255, 182, 193, 0.05);
+}
+.sidebar a:hover {
+    background: rgba(255, 182, 193, 0.2);
 }
 .logo {
     text-align: center;
@@ -33,13 +66,16 @@ h1 {
 .pink {
     color: #FFB6C1;
 }
-.definitions {
+.home-section, .definitions, .links-section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     line-height: 1.6;
     animation: fadeIn 2.5s ease-in-out;
 }
-.definitions p {
+.home-section {
+    text-align: center;
+}
+.definitions p, .links-section p {
     margin-bottom: 30px;
     padding: 15px;
     border-left: 3px solid #FFB6C1;
@@ -70,9 +106,22 @@ h1 {
     height: 100%;
     border: none;
 }
+.links-section h2 {
+    text-align: center;
+}
 </style>
 </head>
 <body>
+<nav class="sidebar">
+<ul>
+<li><a href="#home">home</a></li>
+<li><a href="#intro">intro</a></li>
+<li><a href="#protopian-fiction">protopian fiction</a></li>
+<li><a href="#links">links</a></li>
+</ul>
+</nav>
+<main>
+<section id="home" class="home-section">
 <div class="logo">
 <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -89,16 +138,22 @@ h1 {
 </svg>
 </div>
 <h1>welcome to <span class="pink">post-utopian</span> and <span class="pink">protopian</span> <span class="pink">fiction</span> and <span class="pink">thought</span></h1>
-<div class="definitions">
+</section>
+<section id="intro" class="definitions">
 <p><span class="pink">post-utopian</span>: the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</p>
 <p><span class="pink">protopian</span>: the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</p>
-</div>
-<div class="video-section">
+</section>
+<section id="protopian-fiction" class="video-section">
 <h2 class="pink">prototypes</h2>
 <div class="video-embed">
   <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFB6C1;">here</a>.</p>
-</div>
+</section>
+<section id="links" class="links-section">
+<h2 class="pink">links</h2>
+<p>coming soon...</p>
+</section>
+</main>
 </body>
 </html>
