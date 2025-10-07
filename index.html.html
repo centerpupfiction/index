@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Post-Utopia</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+
+body {
+    background-color: #2023BB;
+    color: #FFFFFF;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-transform: lowercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+.pink {
+    color: #FFB6C1;
+}
+.definitions {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeIn 2.5s ease-in-out;
+}
+.definitions p {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 3px solid #FFB6C1;
+    background: rgba(255, 182, 193, 0.1);
+}
+.video-section {
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+}
+.video-embed {
+    width: 100%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 177.78%; /* 9:16 aspect ratio for YouTube Shorts */
+    position: relative;
+    border: 2px solid #FFB6C1;
+    border-radius: 8px;
+    background: rgba(255, 182, 193, 0.1);
+    overflow: hidden;
+}
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+</head>
+<body>
+<div class="logo">
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="wave" d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="#FFB6C1" stroke-width="2"/>
+  </defs>
+  <use xlink:href="#wave" opacity="0.7"/>
+  <use xlink:href="#wave" transform="translate(0,-20)" opacity="0.5"/>
+  <circle cx="50" cy="25" r="7" fill="#FFB6C1" opacity="0.8">
+    <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="25" r="7" fill="#FFB6C1" opacity="0.6">
+    <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
+</div>
+<h1>welcome to <span class="pink">post-utopian</span> and <span class="pink">protopian</span> <span class="pink">fiction</span> and <span class="pink">thought</span></h1>
+<div class="definitions">
+<p><span class="pink">post-utopian</span>: the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</p>
+<p><span class="pink">protopian</span>: the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</p>
+</div>
+<div class="video-section">
+<h2 class="pink">prototypes</h2>
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFB6C1;">here</a>.</p>
+</div>
+</body>
+</html>
