@@ -8,19 +8,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap');
 
 body {
-    background-color: #101266; /* Darkened background for enhanced contrast /
+    background-color: #101266; /* Darkened background for enhanced contrast */
     color: #FFFFFF;
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 20px 20px 20px 220px;
-    line-height: 1.8; / Increased for better readability /
+    line-height: 1.8; /* Increased for better readability */
     animation: fadeIn 1.5s ease-in-out;
 }
 html {
     scroll-behavior: smooth;
 }
-@keyframes
- fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
@@ -30,10 +29,10 @@ html {
     top: 0;
     height: 100vh;
     width: 200px;
-    background-color: #101266; / Matched to new background /
+    background-color: #101266; /* Matched to new background */
     padding: 60px 0;
     box-sizing: border-box;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); / Added subtle shadow for depth /
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
 }
 .sidebar ul {
     list-style: none;
@@ -46,19 +45,19 @@ html {
 .sidebar a {
     color: #FFFFFF;
     text-decoration: none;
-    border: 1px solid #FFC0CB; / Slightly lighter pink for better contrast /
+    border: 1px solid #FFC0CB; /* Slightly lighter pink for better contrast */
     padding: 12px 20px;
     display: block;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    background: rgba(255, 192, 203, 0.1); / Increased opacity for more visible button background /
-    font-family: 'Arial', sans-serif; / Changed to Arial bold /
+    background: rgba(255, 192, 203, 0.1); /* Increased opacity for more visible button background */
+    font-family: 'Arial', sans-serif; /* Changed to Arial bold */
     font-weight: 700;
-    text-transform: uppercase; / Uppercase for a more button-like feel /
-    letter-spacing: 1px; / Added for professionalism /
+    text-transform: uppercase; /* Uppercase for a more button-like feel */
+    letter-spacing: 1px; /* Added for professionalism */
 }
 .sidebar a:hover {
-    background: rgba(255, 192, 203, 0.3); / Increased hover opacity for better feedback /
-    transform: translateX(5px); / Subtle hover effect /
+    background: rgba(255, 192, 203, 0.3); /* Increased hover opacity for better feedback */
+    transform: translateX(5px); /* Subtle hover effect */
 }
 .logo {
     text-align: center;
@@ -70,18 +69,18 @@ h1 {
     font-weight: 700;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
-    font-size: 2.5em; / Increased size (assuming default ~2em/32px, now ~40px) /
+    font-size: 2.5em; /* Increased size (assuming default ~2em/32px, now ~40px) */
 }
 .pink {
-    color: #FFC0CB; / Lighter pink for enhanced contrast on darker background /
+    color: #FFC0CB; /* Lighter pink for enhanced contrast on darker background */
 }
 .definitions .pink {
-    font-size: 1.2em; / Made terms in definitions bigger /
-    font-weight: 700; / Bolder for emphasis /
+    font-size: 1.2em; /* Made terms in definitions bigger */
+    font-weight: 700; /* Bolder for emphasis */
 }
 .home-section, .definitions, .links-section, .reading-list-section {
-    max-width: 1000px; / Increased width for a more spacious, professional feel /
-    margin: 0 auto 60px; / More bottom margin for separation /
+    max-width: 1000px; /* Increased width for a more spacious, professional feel */
+    margin: 0 auto 60px; /* More bottom margin for separation */
     line-height: 1.6;
     animation: fadeIn 2.5s ease-in-out;
 }
@@ -90,11 +89,11 @@ h1 {
 }
 .definitions p, .links-section p, .reading-list-section p {
     margin-bottom: 30px;
-    padding: 20px; / Slightly more padding /
-    border-left: 4px solid #FFC0CB; / Updated to lighter pink /
-    background: rgba(255, 192, 203, 0.05); / More subtle background with updated pink /
-    border-radius: 4px; / Rounded corners for polish /
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); / Subtle shadow /
+    padding: 20px; /* Slightly more padding */
+    border-left: 4px solid #FFC0CB; /* Updated to lighter pink */
+    background: rgba(255, 192, 203, 0.05); /* More subtle background with updated pink */
+    border-radius: 4px; /* Rounded corners for polish */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 .video-section {
     max-width: 1000px;
@@ -104,15 +103,15 @@ h1 {
 }
 .video-embed {
     width: 100%;
-    max-width: 800px; / Increased for better video presence /
+    max-width: 800px; /* Increased for better video presence */
     height: 0;
-    padding-bottom: 56.25%; / Changed to 16:9 for standard YouTube, adjust if needed /
+    padding-bottom: 56.25%; /* Changed to 16:9 for standard YouTube, adjust if needed */
     position: relative;
-    border: 2px solid #FFC0CB; / Updated to lighter pink /
+    border: 2px solid #FFC0CB; /* Updated to lighter pink */
     border-radius: 8px;
-    background: rgba(255, 192, 203, 0.1); / Updated background /
+    background: rgba(255, 192, 203, 0.1); /* Updated background */
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); / Added shadow for depth /
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 .video-embed iframe {
     position: absolute;
@@ -124,11 +123,12 @@ h1 {
 }
 .links-section h2, .reading-list-section h2 {
     text-align: center;
-    font-size: 1.8em; / Slightly larger headings */
+    font-size: 1.8em; /* Slightly larger headings */
     margin-bottom: 20px;
-}/* Media query for responsiveness */
-@media
- (max-width: 768px) {
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
     }
@@ -148,7 +148,8 @@ h1 {
         margin: 10px;
     }
 }
-</style></head>
+</style>
+</head>
 <body>
 <nav class="sidebar">
 <ul>
@@ -200,4 +201,3 @@ h1 {
 </main>
 </body>
 </html>
-
