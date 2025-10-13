@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 20px 20px 20px 220px;
     line-height: 1.8; /* Increased for better readability */
+    font-size: 18px; /* Increased base font size for better readability and professionalism */
     animation: fadeIn 1.5s ease-in-out;
 }
 html {
@@ -54,6 +55,7 @@ html {
     font-weight: 700;
     text-transform: uppercase; /* Uppercase for a more button-like feel */
     letter-spacing: 1px; /* Added for professionalism */
+    font-size: 1.1em; /* Slightly larger for sidebar links to match overall increase */
 }
 .sidebar a:hover {
     background: rgba(255, 192, 203, 0.3); /* Increased hover opacity for better feedback */
@@ -69,14 +71,26 @@ h1 {
     font-weight: 700;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
-    font-size: 2.5em; /* Increased size (assuming default ~2em/32px, now ~40px) */
+    font-size: 3em; /* Increased for more impact while keeping professional */
+}
+h2 {
+    font-size: 2.2em; /* Larger headings for sections */
 }
 .pink {
     color: #FFC0CB; /* Lighter pink for enhanced contrast on darker background */
 }
 .definitions .pink {
-    font-size: 1.2em; /* Made terms in definitions bigger */
+    font-size: 1.3em; /* Made terms in definitions bigger */
     font-weight: 700; /* Bolder for emphasis */
+}
+.content-wrapper {
+    max-width: 1000px; /* Keeps content centered and readable */
+    margin: 0 auto; /* Centers the container */
+    min-height: 100vh; /* Ensures borders run full height */
+    border-left: 1px solid white; /* White left border line */
+    border-right: 1px solid white; /* White right border line */
+    box-sizing: border-box;
+    padding: 20px; /* Internal padding for spacing */
 }
 .home-section, .definitions, .links-section, .reading-list-section {
     max-width: 1000px; /* Increased width for a more spacious, professional feel */
@@ -94,6 +108,7 @@ h1 {
     background: rgba(255, 192, 203, 0.05); /* More subtle background with updated pink */
     border-radius: 4px; /* Rounded corners for polish */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 1.1em; /* Slightly larger paragraphs for readability */
 }
 .video-section {
     max-width: 1000px;
@@ -112,6 +127,7 @@ h1 {
     background: rgba(255, 192, 203, 0.1); /* Updated background */
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    margin-bottom: 40px; /* Space between videos */
 }
 .video-embed iframe {
     position: absolute;
@@ -124,7 +140,6 @@ h1 {
 .links-section h2, .reading-list-section h2 {
     text-align: center;
     font-size: 1.8em; /* Slightly larger headings */
-    margin-bottom: 20px;
 }
 
 /* Media query for responsiveness */
@@ -147,6 +162,20 @@ h1 {
     .sidebar li {
         margin: 10px;
     }
+    .content-wrapper {
+        border-left: none; /* Remove borders on mobile for better flow */
+        border-right: none;
+        padding: 10px;
+    }
+    body {
+        font-size: 16px; /* Scale down on mobile for fit */
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
 }
 </style>
 </head>
@@ -160,6 +189,7 @@ h1 {
 <li><a href="#links">links</a></li>
 </ul>
 </nav>
+<div class="content-wrapper">
 <main>
 <section id="home" class="home-section">
 <div class="logo">
@@ -189,6 +219,10 @@ h1 {
   <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFC0CB;">here</a>.</p> <!-- Updated link color -->
+<h2 class="pink">kevin kelly</h2>
+<div class="video-embed">
+  <iframe src="//content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
+</div>
 </section>
 <section id="reading-list" class="reading-list-section">
 <h2 class="pink">reading list</h2>
@@ -199,6 +233,7 @@ h1 {
 <p>coming soon...</p>
 </section>
 </main>
+</div>
 </body>
 </html>
 
