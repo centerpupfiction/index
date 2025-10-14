@@ -8,13 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap');
 
 body {
-    background-color: #101266; /* Darkened background for enhanced contrast */
+    background-color: #101266;
     color: #FFFFFF;
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 20px 20px 20px 220px;
-    line-height: 1.8; /* Increased for better readability */
-    font-size: 18px; /* Increased base font size for better readability and professionalism */
+    line-height: 1.8;
+    font-size: 18px;
     animation: fadeIn 1.5s ease-in-out;
 }
 html {
@@ -30,10 +30,10 @@ html {
     top: 0;
     height: 100vh;
     width: 200px;
-    background-color: #101266; /* Matched to new background */
+    background-color: #101266;
     padding: 60px 0;
     box-sizing: border-box;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
 }
 .sidebar ul {
     list-style: none;
@@ -46,20 +46,20 @@ html {
 .sidebar a {
     color: #FFFFFF;
     text-decoration: none;
-    border: 1px solid #FFC0CB; /* Slightly lighter pink for better contrast */
+    border: 1px solid #FFC0CB;
     padding: 12px 20px;
     display: block;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    background: rgba(255, 192, 203, 0.1); /* Increased opacity for more visible button background */
-    font-family: 'Arial', sans-serif; /* Changed to Arial bold */
+    background: rgba(255, 192, 203, 0.1);
+    font-family: 'Arial', sans-serif;
     font-weight: 700;
-    text-transform: uppercase; /* Uppercase for a more button-like feel */
-    letter-spacing: 1px; /* Added for professionalism */
-    font-size: 1.1em; /* Slightly larger for sidebar links to match overall increase */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1em;
 }
 .sidebar a:hover {
-    background: rgba(255, 192, 203, 0.3); /* Increased hover opacity for better feedback */
-    transform: translateX(5px); /* Subtle hover effect */
+    background: rgba(255, 192, 203, 0.3);
+    transform: translateX(5px);
 }
 .logo {
     text-align: center;
@@ -71,30 +71,46 @@ h1 {
     font-weight: 700;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
-    font-size: 3em; /* Increased for more impact while keeping professional */
+    font-size: 3em;
 }
 h2 {
-    font-size: 2.2em; /* Larger headings for sections */
+    font-size: 2.2em;
 }
 .pink {
-    color: #FFC0CB; /* Lighter pink for enhanced contrast on darker background */
+    color: #FFC0CB;
+}
+.highlight {
+    background-color: rgba(255, 192, 203, 0.3);
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 .definitions .pink {
-    font-size: 1.3em; /* Made terms in definitions bigger */
-    font-weight: 700; /* Bolder for emphasis */
+    font-size: 1.3em;
+    font-weight: 700;
 }
 .content-wrapper {
-    max-width: 1000px; /* Keeps content centered and readable */
-    margin: 0 auto; /* Centers the container */
-    min-height: 100vh; /* Ensures borders run full height */
-    border-left: 1px solid white; /* White left border line */
-    border-right: 1px solid white; /* White right border line */
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     box-sizing: border-box;
-    padding: 20px; /* Internal padding for spacing */
+}
+.section {
+    padding: 20px;
+    min-height: 50vh;
+}
+.section-with-image {
+    background-image: url('https://cdn.midjourney.com/b6d65fa3-6c1a-4188-9ecb-72b47da27e63/0_3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.section-blue {
+    background-color: #101266;
 }
 .home-section, .definitions, .links-section, .reading-list-section {
-    max-width: 1000px; /* Increased width for a more spacious, professional feel */
-    margin: 0 auto 60px; /* More bottom margin for separation */
+    max-width: 1000px;
+    margin: 0 auto 60px;
     line-height: 1.6;
     animation: fadeIn 2.5s ease-in-out;
 }
@@ -103,12 +119,12 @@ h2 {
 }
 .definitions p, .links-section p, .reading-list-section p {
     margin-bottom: 30px;
-    padding: 20px; /* Slightly more padding */
-    border-left: 4px solid #FFC0CB; /* Updated to lighter pink */
-    background: rgba(255, 192, 203, 0.05); /* More subtle background with updated pink */
-    border-radius: 4px; /* Rounded corners for polish */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    font-size: 1.1em; /* Slightly larger paragraphs for readability */
+    padding: 20px;
+    border-left: 4px solid #FFC0CB;
+    background: rgba(255, 192, 203, 0.05);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
 }
 .video-section {
     max-width: 1000px;
@@ -118,16 +134,16 @@ h2 {
 }
 .video-embed {
     width: 100%;
-    max-width: 800px; /* Increased for better video presence */
+    max-width: 800px;
     height: 0;
-    padding-bottom: 56.25%; /* Changed to 16:9 for standard YouTube, adjust if needed */
+    padding-bottom: 56.25%;
     position: relative;
-    border: 2px solid #FFC0CB; /* Updated to lighter pink */
+    border: 2px solid #FFC0CB;
     border-radius: 8px;
-    background: rgba(255, 192, 203, 0.1); /* Updated background */
+    background: rgba(255, 192, 203, 0.1);
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-    margin-bottom: 40px; /* Space between videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
 }
 .video-embed iframe {
     position: absolute;
@@ -139,10 +155,17 @@ h2 {
 }
 .links-section h2, .reading-list-section h2 {
     text-align: center;
-    font-size: 1.8em; /* Slightly larger headings */
+    font-size: 1.8em;
+}
+.title-pink {
+    color: #101266 !important; /* Blue override for title pinks */
+}
+.desc-highlight {
+    background-color: rgba(255, 192, 203, 0.2);
+    padding: 2px 4px;
+    border-radius: 2px;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
@@ -163,12 +186,14 @@ h2 {
         margin: 10px;
     }
     .content-wrapper {
-        border-left: none; /* Remove borders on mobile for better flow */
+        border-left: none;
         border-right: none;
+    }
+    .section {
         padding: 10px;
     }
     body {
-        font-size: 16px; /* Scale down on mobile for fit */
+        font-size: 16px;
     }
     h1 {
         font-size: 2.2em;
@@ -191,54 +216,71 @@ h2 {
 </nav>
 <div class="content-wrapper">
 <main>
-<section id="home" class="home-section">
-<div class="logo">
-<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <path id="wave" d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="#FFC0CB" stroke-width="2"/> <!-- Updated stroke color -->
-  </defs>
-  <use xlink:href="#wave" opacity="0.7"/>
-  <use xlink:href="#wave" transform="translate(0,-20)" opacity="0.5"/>
-  <circle cx="50" cy="25" r="7" fill="#FFC0CB" opacity="0.8"> <!-- Updated fill -->
-    <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="150" cy="25" r="7" fill="#FFC0CB" opacity="0.6"> <!-- Updated fill -->
-    <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
-  </circle>
-</svg>
+<div class="section section-with-image">
+  <section id="home" class="home-section">
+    <div class="logo">
+      <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path id="wave" d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="#FFC0CB" stroke-width="2"/>
+        </defs>
+        <use xlink:href="#wave" opacity="0.7"/>
+        <use xlink:href="#wave" transform="translate(0,-20)" opacity="0.5"/>
+        <circle cx="50" cy="25" r="7" fill="#FFC0CB" opacity="0.8">
+          <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="150" cy="25" r="7" fill="#FFC0CB" opacity="0.6">
+          <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+    <h1><span class="highlight">welcome to</span> <span class="title-pink highlight">post-utopian</span> <span class="highlight">and</span> <span class="title-pink highlight">protopian</span> <span class="title-pink highlight">fiction</span> <span class="highlight">and</span> <span class="title-pink highlight">thought</span></h1>
+  </section>
+  <section id="intro" class="definitions">
+    <p><span class="pink">post-utopian</span>: <span class="desc-highlight">the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</span></p>
+    <p><span class="pink">protopian</span>: <span class="desc-highlight">the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</span></p>
+  </section>
+  <div class="video-section">
+    <h2 id="protopian-fiction" class="pink">prototypes</h2>
+  </div>
 </div>
-<h1>welcome to <span class="pink">post-utopian</span> and <span class="pink">protopian</span> <span class="pink">fiction</span> and <span class="pink">thought</span></h1>
-</section>
-<section id="intro" class="definitions">
-<p><span class="pink">post-utopian</span>: the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</p>
-<p><span class="pink">protopian</span>: the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</p>
-</section>
-<section id="protopian-fiction" class="video-section">
-<h2 class="pink">prototypes</h2>
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="section section-blue">
+  <section class="video-section">
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFC0CB;">here</a>.</p>
+  </section>
 </div>
-<p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFC0CB;">here</a>.</p> <!-- Updated link color -->
-<h2 class="pink">kevin kelly</h2>
-<div class="video-embed">
-  <iframe src="//content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
+
+<div class="section section-blue">
+  <section class="video-section">
+    <h2 class="pink">kevin kelly</h2>
+    <div class="video-embed">
+      <iframe src="//content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
+    </div>
+  </section>
 </div>
-<h2 class="pink">post-scarcity</h2>
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/GqYyQcGQa2c" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="section section-blue">
+  <section id="post-scarcity" class="video-section">
+    <h2 class="pink">post-scarcity</h2>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/GqYyQcGQa2c" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/GqYyQcGQa2c" target="_blank" style="color: #FFC0CB;">here</a>.</p>
+  </section>
+  <section id="reading-list" class="reading-list-section">
+    <h2 class="pink">reading list</h2>
+    <p>coming soon...</p>
+  </section>
+  <section id="links" class="links-section">
+    <h2 class="pink">links</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
-<p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/GqYyQcGQa2c" target="_blank" style="color: #FFC0CB;">here</a>.</p>
-</section>
-<section id="reading-list" class="reading-list-section">
-<h2 class="pink">reading list</h2>
-<p>coming soon...</p>
-</section>
-<section id="links" class="links-section">
-<h2 class="pink">links</h2>
-<p>coming soon...</p>
-</section>
+
 </main>
 </div>
 </body>
 </html>
-
