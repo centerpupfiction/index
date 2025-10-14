@@ -20,8 +20,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-@keyframes
- fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
@@ -45,22 +44,21 @@ html {
     margin-bottom: 20px;
 }
 .sidebar a {
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
-    border: 1px solid #FFC0CB;
     padding: 12px 20px;
+    border: 1px solid #6c63ff;
     display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    background: rgba(255, 192, 203, 0.1);
-    font-family: 'Arial', sans-serif;
-    font-weight: 700;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.1em;
 }
 .sidebar a:hover {
-    background: rgba(255, 192, 203, 0.3);
-    transform: translateX(5px);
+    background-color: #ff9ed8;
+    color: #0a0840;
+    border-color: #ff9ed8;
 }
 .logo {
     text-align: center;
@@ -101,10 +99,61 @@ h2 {
     min-height: 50vh;
 }
 .section-with-image {
-    background-image: url('https://cdn.midjourney.com/b6d65fa3-6c1a-4188-9ecb-72b47da27e63/0_3.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #0a0840;
+}
+.section-with-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 60, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    padding-top: 40px;
+}
+.overlay h1 {
+    font-size: 2.4em;
+    font-weight: 800;
+    text-transform: lowercase;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    margin-bottom: 0.3em;
+}
+.overlay h1 .title-pink {
+    color: #ff9ed8;
+}
+.definition {
+    margin-top: 10px;
+    max-width: 85%;
+    font-size: 1em;
+    line-height: 1.4em;
+    background: rgba(13, 10, 74, 0.6);
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.definition .term {
+    color: #ff9ed8;
+    font-weight: 700;
+}
+.definition .desc-highlight {
+    color: #c8d7ff;
+    font-weight: 600;
 }
 .section-blue {
     background-color: #101266;
@@ -158,15 +207,7 @@ h2 {
     text-align: center;
     font-size: 1.8em;
 }
-.title-pink {
-    color: #101266 !important; /* Blue override for title pinks */
-}
-.desc-highlight {
-    background-color: #101266;
-    padding: 2px 4px;
-    border-radius: 2px;
-}@media
- (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
     }
@@ -201,8 +242,12 @@ h2 {
     h2 {
         font-size: 1.8em;
     }
+    .overlay h1 {
+        font-size: 1.8em;
+    }
 }
-</style></head>
+</style>
+</head>
 <body>
 <nav class="sidebar">
 <ul>
@@ -216,47 +261,53 @@ h2 {
 <div class="content-wrapper">
 <main>
 <div class="section section-with-image">
-  <section id="home" class="home-section">
-    <div class="logo">
-      <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <path id="wave" d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="#FFC0CB" stroke-width="2"/>
-        </defs>
-        <use xlink:href="#wave" opacity="0.7"/>
-        <use xlink:href="#wave" transform="translate(0,-20)" opacity="0.5"/>
-        <circle cx="50" cy="25" r="7" fill="#FFC0CB" opacity="0.8">
-          <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="150" cy="25" r="7" fill="#FFC0CB" opacity="0.6">
-          <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-    <h1><span class="highlight">welcome to</span> <span class="title-pink highlight">post-utopian</span> <span class="highlight">and</span> <span class="title-pink highlight">protopian</span> <span class="title-pink highlight">fiction</span> <span class="highlight">and</span> <span class="title-pink highlight">thought</span></h1>
-  </section>
-  <section id="intro" class="definitions">
-    <p><span class="pink">post-utopian</span>: <span class="desc-highlight">the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</span></p>
-    <p><span class="pink">protopian</span>: <span class="desc-highlight">the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</span></p>
-  </section>
-  <div class="video-section">
-    <h2 id="protopian-fiction" class="pink">prototypes</h2>
+  <img src="https://cdn.midjourney.com/b6d65fa3-6c1a-4188-9ecb-72b47da27e63/0_3.png" alt="Futuristic scene">
+  <div class="overlay">
+    <section id="home" class="home-section">
+      <div class="logo">
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <path id="wave" d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="#FFC0CB" stroke-width="2"/>
+          </defs>
+          <use xlink:href="#wave" opacity="0.7"/>
+          <use xlink:href="#wave" transform="translate(0,-20)" opacity="0.5"/>
+          <circle cx="50" cy="25" r="7" fill="#FFC0CB" opacity="0.8">
+            <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="150" cy="25" r="7" fill="#FFC0CB" opacity="0.6">
+            <animate attributeName="r" values="7;11;7" dur="3s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <h1>welcome to <span class="title-pink">post-utopian</span> and <span class="title-pink">protopian fiction</span> and thought</h1>
+    </section>
+    
+    <section id="intro">
+      <div class="definition">
+        <span class="term">post-utopian:</span> <span class="desc-highlight">the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</span>
+      </div>
+      <div class="definition">
+        <span class="term">protopian:</span> <span class="desc-highlight">the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</span>
+      </div>
+    </section>
   </div>
 </div>
 
 <div class="section section-blue">
-  <section class="video-section">
+  <div class="video-section">
+    <h2 id="protopian-fiction" class="pink">prototypes</h2>
     <div class="video-embed">
       <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFC0CB;">here</a>.</p>
-  </section>
+  </div>
 </div>
 
 <div class="section section-blue">
   <section class="video-section">
     <h2 class="pink">kevin kelly</h2>
     <div class="video-embed">
-      <iframe src="//content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
+      <iframe src="https://content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
     </div>
   </section>
 </div>
