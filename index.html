@@ -115,7 +115,6 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 10, 60, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -138,8 +137,260 @@ h2 {
 .definition {
     margin-top: 10px;
     max-width: 85%;
-    font-size: 1em;
-    line-height: 1.4em;
+    font-size: 1.2em; /* Increased font size for definition text */
+    line-height: 1.5em;
+    background: rgba(13, 10, 74, 0.6);
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.definition .term {
+    color: #ff9ed8;
+    font-weight: 700;
+}
+.definition .desc-highlight {
+    color: #c8d7ff;
+    font-weight: 600;
+}
+.section-blue {
+    background-color: #101266;
+}
+.home-section, .definitions, .links-section, .reading-list-section {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+    animation: fadeIn 2.5s ease-in-out;
+}
+.home-section {
+    text-align: center;
+}
+.definitions p, .links-section p, .reading-list-section p {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid #FFC0CB;
+    background: rgba(255, 192, 203, 0.05);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+.video-section {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+}
+.video-embed {
+    width: 100%;
+    max-width: 800px;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    border: 2px solid #FFC0CB;
+    border-radius: 8px;
+    background: rgba(255, 192, 203, 0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.links-section h2, .reading-list-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 20px 20px 20px 0;
+    }
+    .sidebar {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar li {
+        margin: 10px;
+    }
+    .content-wrapper {
+        border-left: none;
+        border-right: none;
+    }
+    .section {
+        padding: 10px;
+    }
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    h...
+
+I want the whole image to look less dark?
+
+To make the entire image under the title text look less dark, we need to remove or adjust the elements that are darkening it. The darkness is primarily caused by two factors in your code:The .overlay div's background: The .overlay has a semi-transparent background (background: rgba(10, 10, 60, 0.2);) that darkens the image.
+The .section-with-image background color: The background-color: #0a0840; in the .section-with-image class adds a dark tint if the image doesn't fully cover the container.
+
+To address your request, I'll:Remove the background property from the .overlay class to eliminate the darkening overlay.
+Remove the background-color from the .section-with-image class to prevent any dark tint from affecting the image.
+Increase the font size of the definition text (as requested previously) to 1.2em for better readability.
+
+Below is the updated code with these changes:html
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Post-Utopia</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap');
+
+body {
+    background-color: #101266;
+    color: #FFFFFF;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 20px 20px 20px 220px;
+    line-height: 1.8;
+    font-size: 18px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #101266;
+    padding: 60px 0;
+    box-sizing: border-box;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    margin-bottom: 20px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid #6c63ff;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sidebar a:hover {
+    background-color: #ff9ed8;
+    color: #0a0840;
+    border-color: #ff9ed8;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.2em;
+}
+.pink {
+    color: #FFC0CB;
+}
+.highlight {
+    background-color: rgba(255, 192, 203, 0.3);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.definitions .pink {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+}
+.section {
+    padding: 20px;
+    min-height: 50vh;
+}
+.section-with-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.section-with-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    padding-top: 40px;
+}
+.overlay h1 {
+    font-size: 2.4em;
+    font-weight: 800;
+    text-transform: lowercase;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    margin-bottom: 0.3em;
+}
+.overlay h1 .title-pink {
+    color: #ff9ed8;
+}
+.definition {
+    margin-top: 10px;
+    max-width: 85%;
+    font-size: 1.2em; /* Increased font size for definition text */
+    line-height: 1.5em;
     background: rgba(13, 10, 74, 0.6);
     padding: 10px 14px;
     border-radius: 6px;
@@ -334,3 +585,6 @@ h2 {
 </div>
 </body>
 </html>
+
+
+
