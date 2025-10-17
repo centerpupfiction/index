@@ -1,4 +1,4 @@
-<!doctype html>
+l<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -295,11 +295,13 @@ h2 {
         align-items: flex-start;  /* NEW: Aligns content to left instead of center */
         padding-left: 5%;  /* NEW: Adds left padding for breathing room near image edge */
     }
-    .overlay h1 {
-        font-size: 1.75em;
-        transform: translateX(-1.2em);  /* UPDATED: Increased left shift to cover 'w' width + buffer */
-        letter-spacing: 1px;  /* UPDATED: Reduce spacing to tighten text and prevent overflow */
-        max-width: 90%;  /* NEW: Caps text width to ensure it doesn't exceed container */
+     .overlay h1 {
+        font-size: 1.5em;
+        transform: translateX(-0.5em);
+        letter-spacing: 0.5px;
+        max-width: 85%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     .box-container {
         flex-direction: column;
@@ -503,5 +505,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
 
