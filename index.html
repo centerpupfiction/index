@@ -22,6 +22,7 @@ html {
     scroll-behavior: smooth;
 }
 @keyframes
+
  fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -254,6 +255,7 @@ h2 {
     background-color: #1976D2;
 }
 @media
+
  (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
@@ -295,6 +297,7 @@ h2 {
     }
     .overlay h1 {
         font-size: 1.75em;
+        transform: translateX(-1em);
     }
     .box-container {
         flex-direction: column;
@@ -303,8 +306,7 @@ h2 {
         height: 200px;
     }
 }
-</style></head>
-<body>
+</style></head><body>
 <nav class="sidebar">
 <ul>
 <li><a href="#home" class="active">home</a></li>
@@ -499,3 +501,4 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
