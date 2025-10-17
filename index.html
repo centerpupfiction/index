@@ -43,12 +43,12 @@ html {
     margin: 0;
 }
 .sidebar li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .sidebar a {
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 8px 10px;
     border: 1px solid #6c63ff;
     display: block;
     text-align: center;
@@ -56,6 +56,7 @@ html {
     border-radius: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 0.85em;
 }
 .sidebar a:hover,
 .sidebar a.active {
@@ -227,6 +228,31 @@ h2 {
     text-align: center;
     font-size: 1.8em;
 }
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box {
+    flex: 1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
+.red-box {
+    background-color: #E53935;
+}
+.dark-blue-box {
+    background-color: #1976D2;
+}
 @media
  (max-width: 768px) {
     body {
@@ -266,14 +292,22 @@ h2 {
     .overlay h1 {
         font-size: 1.8em;
     }
+    .box-container {
+        flex-direction: column;
+    }
+    .box {
+        height: 200px;
+    }
 }
 </style></head>
 <body>
 <nav class="sidebar">
 <ul>
 <li><a href="#home" class="active">home</a></li>
-<li><a href="#about">about</a></li>
-<li><a href="#protopian-fiction">protopian fiction</a></li>
+<li><a href="#about">about protopia.ink</a></li>
+<li><a href="#protopian-fiction">about protopian fiction</a></li>
+<li><a href="#protopian-stories">protopian stories</a></li>
+<li><a href="#digital-protopias">digital protopias</a></li>
 <li><a href="#protopian-media">protopian media</a></li>
 <li><a href="#reading-list">reading list</a></li>
 <li><a href="#links">links</a></li>
@@ -301,7 +335,7 @@ h2 {
           </circle>
         </svg>
       </div>
-      <h1>welcome to <span class="title-pink">post-utopian</span> and <span class="title-pink">protopian fiction</span> and thought</h1>
+      <h1>Welcome to Protopia, the Third Way Portal to the Future Island of Achievability, where Writing fuses with Concepts and Endeavours.</h1>
     </section>
   </div>
 </div>
@@ -310,8 +344,23 @@ h2 {
 <div class="page" id="about">
 <div class="section section-blue">
   <section class="definitions">
-    <h2 class="pink">About</h2>
-    <p>This about page dives deeper into the concepts of post-utopian and protopian fiction. Post-utopian narratives often explore the messy aftermath of idealistic visions, embracing imperfection as a source of creativity. Protopian thought, inspired by thinkers like Kevin Kelly, celebrates small, tangible improvements that accumulate into profound change. Here, we curate stories, ideas, and media that reflect this evolving landscape of tomorrow.</p>
+    <h2 class="pink">About Protopia.ink</h2>
+    <p>This internet site has started off aspiring to be the new digital 'Granta' of optimistic futuristic fiction and non-fiction, but now brings in the idea of fusing protopian writing with active protopian builders, digital inventors, and live protopian communities, in the hope that a synergistic smelting will result. Here we curate stories, ideas and media that reflect this evolving landscape of tomorrow. </p>
+    <div class="definition">
+      <span class="term">post-utopian:</span> <span class="desc-highlight">the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</span>
+    </div>
+    <div class="definition">
+      <span class="term">protopian:</span> <span class="desc-highlight">the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</span>
+    </div>
+  </section>
+</div>
+</div>
+
+<div class="page" id="protopian-fiction">
+<div class="section section-blue">
+  <section class="definitions">
+    <h2 class="pink">About Protopian Fiction</h2>
+    <p>This page dives deeper into the concepts of post-utopian and protopian fiction. Post-utopian narratives often explore the messy aftermath of idealistic visions, embracing imperfection as a source of creativity. Protopian thought, inspired by thinkers like Kevin Kelly, celebrates small, tangible improvements that accumulate into profound change.</p>
     <h2 class="pink">Post-utopian and Protopian Fiction and Thought</h2>
     <div class="definition">
       <span class="term">post-utopian:</span> <span class="desc-highlight">the exhale after utopia's dream—futures fade into realities, trading grand blueprints for the sometimes beautiful, sometimes ugly, chaos of what-is-next.</span>
@@ -349,12 +398,21 @@ h2 {
 </div>
 </div>
 
-<div class="page" id="protopian-fiction">
+<div class="page" id="protopian-stories">
 <div class="section section-blue">
-  <section class="video-section">
-    <h2 class="pink">Protopian Fiction</h2>
-    <p>Coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">Protopian Stories</h2>
+    <p>coming soon...</p>
   </section>
+</div>
+</div>
+
+<div class="page" id="digital-protopias">
+<div class="section section-blue">
+  <div class="box-container">
+    <div class="box red-box">Digital Protopias</div>
+    <div class="box dark-blue-box">Digital Protopian Ideas and Concepts</div>
+  </div>
 </div>
 </div>
 
@@ -437,5 +495,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
-
-
