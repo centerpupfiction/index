@@ -1,4 +1,4 @@
-l<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -7,6 +7,7 @@ l<!doctype html>
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap');
+
 body {
     background-color: #101266;
     color: #FFFFFF;
@@ -17,14 +18,16 @@ body {
     font-size: 18px;
     animation: fadeIn 1.5s ease-in-out;
 }
+
 html {
     scroll-behavior: smooth;
 }
-@keyframes
- fadeIn {
+
+@keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -63,11 +66,13 @@ html {
     color: #0a0840;
     border-color: #ff9ed8;
 }
+
 .logo {
     text-align: center;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
 }
+
 h1 {
     text-align: center;
     font-weight: 700;
@@ -75,22 +80,27 @@ h1 {
     animation: fadeIn 2s ease-in-out;
     font-size: 3em;
 }
+
 h2 {
     font-size: 2.2em;
 }
+
 .pink {
     color: #FFC0CB;
     font-weight: 700;
 }
+
 .highlight {
     background-color: rgba(255, 192, 203, 0.3);
     padding: 5px 10px;
     border-radius: 4px;
 }
+
 .definitions .pink {
     font-size: 1.3em;
     font-weight: 700;
 }
+
 .content-wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -98,16 +108,19 @@ h2 {
     border-right: 1px solid white;
     box-sizing: border-box;
 }
+
 .section {
     padding: 20px;
     min-height: 50vh;
 }
+
 .page {
     display: none;
 }
 .page.active {
     display: block;
 }
+
 .section-with-image {
     position: relative;
     overflow: hidden;
@@ -118,6 +131,8 @@ h2 {
     width: 100%;
     height: auto;
 }
+
+/* --- REPLACED: overlay rules (inserted exactly as requested) --- */
 .overlay {
     position: absolute;
     top: 0;
@@ -127,17 +142,18 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     color: white;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 40px 40px 20px 60px;
 }
+
+/* Move the text block to the right so it sits over the sky area */
 .overlay h1 {
     font-size: 2.4em;
     font-weight: 800;
     text-transform: lowercase;
     color: white;
-    text-shadow: 
+    text-shadow:
         2px 2px 0px #001122,
         4px 4px 0px #002244,
         6px 6px 0px #003366,
@@ -145,10 +161,34 @@ h2 {
     margin-bottom: 0.3em;
     letter-spacing: 2px;
     font-family: 'Orbitron', monospace;
+    text-align: left;
+    line-height: 1.4;
+    max-width: 60%;
+    word-wrap: break-word;
+
+    /* the key new part */
+    margin-left: 40%;  
 }
+
+/* On smaller screens, reset so text recenters */
+@media (max-width: 1024px) {
+    .overlay h1 {
+        margin-left: 10%;
+        max-width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .overlay h1 {
+        margin-left: 5%;
+        max-width: 85%;
+    }
+}
+/* --- end replaced section --- */
+
 .overlay h1 .title-pink {
     color: #ff9ed8;
 }
+
 .definition {
     margin-top: 10px;
     max-width: 85%;
@@ -161,26 +201,32 @@ h2 {
     color: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
+
 .definition .term {
     color: #ff9ed8;
     font-weight: 700;
 }
+
 .definition .desc-highlight {
     color: #c8d7ff;
     font-weight: 600;
 }
+
 .section-blue {
     background-color: #101266;
 }
+
 .home-section, .definitions, .links-section, .reading-list-section {
     max-width: 1000px;
     margin: 0 auto 60px;
     line-height: 1.6;
     animation: fadeIn 2.5s ease-in-out;
 }
+
 .home-section {
     text-align: center;
 }
+
 .definitions p, .links-section p, .reading-list-section p {
     margin-bottom: 30px;
     padding: 20px;
@@ -191,17 +237,20 @@ h2 {
     font-size: 1.1em;
     font-weight: 700;
 }
+
 .definitions .highlight {
     font-family: 'Orbitron', monospace;
     font-weight: 700;
     letter-spacing: 1px;
 }
+
 .video-section {
     max-width: 1000px;
     margin: 40px auto 0;
     text-align: center;
     animation: fadeIn 3s ease-in-out;
 }
+
 .video-embed {
     width: 100%;
     max-width: 800px;
@@ -223,10 +272,12 @@ h2 {
     height: 100%;
     border: none;
 }
+
 .links-section h2, .reading-list-section h2 {
     text-align: center;
     font-size: 1.8em;
 }
+
 .box-container {
     display: flex;
     justify-content: space-between;
@@ -234,6 +285,7 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .box {
     flex: 1;
     height: 300px;
@@ -246,12 +298,15 @@ h2 {
     text-align: center;
     border-radius: 8px;
 }
+
 .red-box {
     background-color: #E53935;
 }
+
 .dark-blue-box {
     background-color: #1976D2;
 }
+
 @media (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
@@ -287,19 +342,21 @@ h2 {
     h2 {
         font-size: 1.8em;
     }
+    /* keep small-screen overlay padding and alignment (matches replaced rules above) */
     .overlay {
         padding: 10px;
         padding-top: 30px;
         align-items: flex-start;  
         padding-left: 5%;  
     }
-     .overlay h1 {
+    .overlay h1 {
         font-size: 1.5em;
         transform: translateX(-0.5em);
         letter-spacing: 0.5px;
         max-width: 85%;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        /* margin-left will be overridden by the earlier media queries for 768px */
     }
     .box-container {
         flex-direction: column;
@@ -308,7 +365,10 @@ h2 {
         height: 200px;
     }
 }
-</style></head><body>
+</style>
+</head>
+
+<body>
 <nav class="sidebar">
 <ul>
 <li><a href="#home" class="active">home</a></li>
@@ -321,6 +381,7 @@ h2 {
 <li><a href="#links">links</a></li>
 </ul>
 </nav>
+
 <div class="content-wrapper">
 <main>
 <div class="page active" id="home">
@@ -343,7 +404,14 @@ h2 {
           </circle>
         </svg>
       </div>
-      <h1>Welcome to Protopia, the Future Island of Achievability, where Writing fuses with Concepts and Endeavours.</h1>
+
+      <h1>
+        Welcome to Protopia,<br>
+        the Future Island,<br>
+        of Achievability,<br>
+        where Writing fuses<br>
+        with Concepts and Endeavours.
+      </h1>
     </section>
   </div>
 </div>
@@ -397,10 +465,6 @@ h2 {
       <p>Even a brief examination of recent academic opinion in terms of futurism and utopianism can show a persistent focus on non-binary theory, for example, which as a theory so easily identifies with fragmented or fluid forms. Of course, it is virtually impossible not to support such ideologies, as clearly the absolute evidence of the harsh reality of the binary opposition existing in, say, the Russia versus US conflict, or the Palestine versus Israel one, is irrefutable.</p>
       <p>Contemporary non-binary ideology in geopolitical contexts or arguments can however make it hard to decipher reality from fantasy in the context of non-superpowers and ideas of the non-binary filtering even into concepts for visions of the future in terms of geopolitical conflicts and tensions and gender theory itself: narratives about non-binary transitioning states, even when caught up in bloody wars, do not seem so far off in current academic discourse, and one has to wonder how extreme notions of fluidity or non-binary national identity might add to coherent and clear imaginings of what might be feasible for the future, as discourse becomes so entrenched in hazy or blurry ideas and so distant in terms of clarity from what might be truly achievable.</p>
       <p>Or is it that a fluid state in terms of a utopian nation is possible? Certainly in places like Northern Ireland, for example, where some people often do not want to identify as either nationalist or unionist - the two binary states of being in terms of national identity - the non-binary becomes unequivocally relevant and important – unless of course it can be defined or ought to be defined as something else, like a third way, and concepts of the non-binary are not the most useful way of analysing the issues, taking into account the polemical positions these ideologies of the non-binary sometimes present with. It is clear at the least that such concepts can over-complicate a vision of the future, where in the polarised world today it is virtually impossible to envision even how different ethnicities can live together in the future, let alone also in terms of different political views, and let alone again different ethnicities identifying even in terms of sexuality in more traditional non-conformist parameters, and let alone again different ethnicities and sexualities and political viewpoints co-existing while ideas of children transitioning are also tolerated. These ideas are already so complex: add fragmentation, they themselves become impossible to decipher even before futuristic notions of virtual reality, digital currencies, dictatorships, socialistic utopias, to name just a few, are grappled with.</p>
-      <p>But if we look at the current political conflict in the US, with one side demonising the other, for supporting, for example, gender surgery and ‘transgender’ children, or with Donald Trump and Elon Musk criticising Europe for allowing such large numbers of migrants into the EC and the UK, and for, in their view, increasing the rise in serious crime, ideology and the binary clearly remain core fundamentals for one side in terms of what the future might hold. Are Le Guin’s non-conforming genders to be banished from futuristic fiction as insufficiently clear, or at least insufficiently binary? Does clarity even have to align with concepts of the binary? And in terms of the future, and the current furore about the Epstein files, and his island of depravity, how does a very readable paragraph such as this in Le Guin’s The Dispossessed inform us as to how we proceed into fictional visions of the future in our states of either lucid or fragmented or lucid and fragmented haze:<br />
-      ‘To hear Tirin talk he was the man who invented copulation, but all his affairs were with girls of fifteen or sixteen; he shied away from ones his own age. Bedap, never very energetic sexually, accepted the homage of a younger boy who had a homosexual-idealistic crush on him, and let that suffice him.’</p>
-      <p>When we read another extract, in the same novel, one has to ask, was Le Guin having a premonition of 2025 – there is certainly no fragmentation of controversial ideas, as can often be the case when the taboo is explored in fiction:<br />
-      ‘They had also seen the corpses of children, hairy like themselves, stacked up like scrap metal, stiff and rusty, on a sea-beach, and men pouring oil over the children and lighting it. “A famine in Bachifoil Province in the Nation of Thu….Bodies of children dead of starvation and disease are burned on the beaches…”.’</p>
     </div>
   </section>
 </div>
@@ -503,7 +567,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
-
-
-
-
