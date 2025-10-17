@@ -254,9 +254,7 @@ h2 {
 .dark-blue-box {
     background-color: #1976D2;
 }
-@media
-
- (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
     }
@@ -294,10 +292,14 @@ h2 {
     .overlay {
         padding: 10px;
         padding-top: 30px;
+        align-items: flex-start;  /* NEW: Aligns content to left instead of center */
+        padding-left: 5%;  /* NEW: Adds left padding for breathing room near image edge */
     }
     .overlay h1 {
         font-size: 1.75em;
-        transform: translateX(-1em);
+        transform: translateX(-1.2em);  /* UPDATED: Increased left shift to cover 'w' width + buffer */
+        letter-spacing: 1px;  /* UPDATED: Reduce spacing to tighten text and prevent overflow */
+        max-width: 90%;  /* NEW: Caps text width to ensure it doesn't exceed container */
     }
     .box-container {
         flex-direction: column;
@@ -501,4 +503,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
