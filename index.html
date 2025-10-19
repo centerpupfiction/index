@@ -2,9 +2,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Protopia.ink: Curating optimistic futuristic fiction, stories, and media for incremental progress.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.youtube.com https://content.jwplatform.com;">
 <title>Protopia</title>
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
@@ -68,9 +65,6 @@ html {
     background-color: #ff9ed8;
     color: #0a0840;
     border-color: #ff9ed8;
-}
-.sidebar a:focus {
-    outline: 2px solid #FFC0CB;
 }
 
 .logo {
@@ -375,9 +369,9 @@ h2 {
 </head>
 
 <body>
-<nav class="sidebar" role="navigation" aria-label="Main navigation">
+<nav class="sidebar">
 <ul>
-<li><a href="#home" class="active" aria-current="page">home</a></li>
+<li><a href="#home" class="active">home</a></li>
 <li><a href="#about">about protopia.ink</a></li>
 <li><a href="#protopian-fiction">about protopian fiction</a></li>
 <li><a href="#protopian-stories">protopian stories</a></li>
@@ -388,11 +382,11 @@ h2 {
 </ul>
 </nav>
 
-<div class="content-wrapper" role="main" aria-live="polite">
+<div class="content-wrapper">
 <main>
-<div class="page active" id="home" role="region" aria-label="Home Section">
+<div class="page active" id="home">
 <div class="section section-with-image">
-  <img src="https://cdn.midjourney.com/b6d65fa3-6c1a-4188-9ecb-72b47da27e63/0_1.png" alt="Futuristic scene" loading="lazy">
+  <img src="https://cdn.midjourney.com/b6d65fa3-6c1a-4188-9ecb-72b47da27e63/0_1.png" alt="Futuristic scene">
   <div class="overlay">
     <section class="home-section">
       <div class="logo">
@@ -423,7 +417,7 @@ h2 {
 </div>
 </div>
 
-<div class="page" id="about" role="region" aria-label="About Protopia.ink Section">
+<div class="page" id="about">
 <div class="section section-blue">
   <section class="definitions">
     <h2 class="pink">About Protopia.ink</h2>
@@ -437,7 +431,7 @@ h2 {
   </section>
 </div>
 </div>
-<div class="page" id="protopian-fiction" role="region" aria-label="About Protopian Fiction Section">
+<div class="page" id="protopian-fiction">
 <div class="section section-blue">
   <section class="definitions">
     <h2 class="pink">About Protopian Fiction</h2>
@@ -450,41 +444,41 @@ h2 {
       <span class="term">protopian:</span> <span class="desc-highlight">the quiet thrill of incremental wins in the gritty glow of "better than yesterday," one prototype at a time.</span>
     </div>
     <div class="definition">
-      <p>In the current era, envisioning a better future for the world is difficult. Utopian imaginings in fiction have for a large part long been abandoned because they are not historically such good templates for writing fiction: blissful visions of the future do not provide a rich fabric for conflict, or drama, and risk being boring through excessive exposition and description. Hence the popularity of dystopian writing, with 1984 and Brave New World being such strong examples of the genre, and with novels such as Ballard's High Rise and Atwoods's A Handmaid's Tale readily showing those dark influences.</p>
-      <p>Recent academic work such as <a href="https://books.google.ie/books/about/Utopia_and_the_Contemporary_British_Nove.html?id=YDGdDwAAQBAJ&redir_esc=y" rel="noopener noreferrer" style="color: #ff9ed8;">Utopia and the Contemporary British Novel</a> (Edwards, 2019) has nonetheless focused on distinct utopian strands in 21st century fiction, and recent reviews of some new novels that perhaps blend dystopia with utopia, such as Ruth, for example, reflect on the positivity of these particular futuristic works, even with bleakness inherent in them.</p>
-      <p>But none of this means that utopian fiction was never in vogue. Titles released prior to or during the warped growth of Communism offer real utopian visions: Aldous Huxley's Island (1962) imagines a harmonious society on the island of Pala which is still spiritual, communal, and optimistic; Ernest Callenbach's Ecotopia (1975), with its influential environmental utopia, envisions an eco-socialist, sustainable society in the Pacific Northwest; Ursula K. Le Guin's The Dispossessed (1974) offers an "ambiguous utopia," which while not naïve is still structurally utopian - it became the high-water mark of the genre and a direct predecessor to post-utopian disillusionment; Marge Piercy's Woman on the Edge of Time (1976) is a feminist utopian novel which presents an egalitarian, ecological future in contrast to patriarchal modernity; Joanna Russ's The Female Man (1975), is a speculative feminist utopia that experiments with multiple worlds, one of which functions as an achieved utopia; Ivan Efremov's Andromeda: A Space-Age Tale (1957), is a Soviet utopia envisioning a peaceful, spacefaring communist humanity (it was hugely influential in Eastern Europe) and in Stanislaw Lem's Return from the Stars (1961), technological rationalism brings peace but also an emotional flattening - while it is not purely utopian, it does attempt to imagine a future Earth without violence.</p>
+      <p>In the current era, envisioning a better future for the world is difficult. Utopian imaginings in fiction have for a large part long been abandoned because they are not historically such good templates for writing fiction: blissful visions of the future do not provide a rich fabric for conflict, or drama, and risk being boring through excessive exposition and description. Hence the popularity of dystopian writing, with 1984 and Brave New World being such strong examples of the genre, and with novels such as Ballard’s High Rise and Atwoods’s A Handmaid’s Tale readily showing those dark influences.</p>
+      <p>Recent academic work such as <a href="https://books.google.ie/books/about/Utopia_and_the_Contemporary_British_Nove.html?id=YDGdDwAAQBAJ&redir_esc=y" style="color: #ff9ed8;">Utopia and the Contemporary British Novel</a> (Edwards, 2019) has nonetheless focused on distinct utopian strands in 21st century fiction, and recent reviews of some new novels that perhaps blend dystopia with utopia, such as Ruth, for example, reflect on the positivity of these particular futuristic works, even with bleakness inherent in them.</p>
+      <p>But none of this means that utopian fiction was never in vogue. Titles released prior to or during the warped growth of Communism offer real utopian visions: Aldous Huxley’s Island (1962) imagines a harmonious society on the island of Pala which is still spiritual, communal, and optimistic; Ernest Callenbach’s Ecotopia (1975), with its influential environmental utopia, envisions an eco-socialist, sustainable society in the Pacific Northwest; Ursula K. Le Guin’s The Dispossessed (1974) offers an “ambiguous utopia,” which while not naïve is still structurally utopian - it became the high-water mark of the genre and a direct predecessor to post-utopian disillusionment; Marge Piercy’s Woman on the Edge of Time (1976) is a feminist utopian novel which presents an egalitarian, ecological future in contrast to patriarchal modernity; Joanna Russ’s The Female Man (1975), is a speculative feminist utopia that experiments with multiple worlds, one of which functions as an achieved utopia; Ivan Efremov’s Andromeda: A Space-Age Tale (1957), is a Soviet utopia envisioning a peaceful, spacefaring communist humanity (it was hugely influential in Eastern Europe) and in Stanislaw Lem’s Return from the Stars (1961), technological rationalism brings peace but also an emotional flattening - while it is not purely utopian, it does attempt to imagine a future Earth without violence.</p>
       <p><span class="pink">The Turn Toward Post-Utopia and the Backlash</span><br />
-      After the examples above, the genre fractures into 'critical utopias' (see Frederic Jameson), post-utopias, and protopian or ambiguous futures that question the very premise of perfection:<br />
-      Le Guin's, Always Coming Home (1985) is a 'post-utopia' in form and tone, but is ethnographic rather than visionary; Kim Stanley Robinson's, Pacific Edge (1990) is the last clearly optimistic utopia in late 20th-century Anglophone fiction; later, his tone darkens into the realist 'protopian' mode (Ministry for the Future, 2020); Margaret Atwood's The Handmaid's Tale (1985) is a dystopia reacting against failed utopian promises; David Mitchell's Cloud Atlas (2004) is cyclical rather than utopian, exploring the failure of idealisms across epochs; Ruth Ozeki's A Tale for the Time Being (2013) and The Book of Form and Emptiness (2021) explore spiritual and ecological optimistic outlooks surviving amid post-utopian realism.</p>
+      After the examples above, the genre fractures into ‘critical utopias’ (see Frederic Jameson), post-utopias, and protopian or ambiguous futures that question the very premise of perfection:<br />
+      Le Guin’s, Always Coming Home (1985) is a ‘post-utopia’ in form and tone, but is ethnographic rather than visionary; Kim Stanley Robinson’s, Pacific Edge (1990) is the last clearly optimistic utopia in late 20th-century Anglophone fiction; later, his tone darkens into the realist ‘protopian’ mode (Ministry for the Future, 2020); Margaret Atwood’s The Handmaid’s Tale (1985) is a dystopia reacting against failed utopian promises; David Mitchell’s Cloud Atlas (2004) is cyclical rather than utopian, exploring the failure of idealisms across epochs; Ruth Ozeki’s A Tale for the Time Being (2013) and The Book of Form and Emptiness (2021) explore spiritual and ecological optimistic outlooks surviving amid post-utopian realism.</p>
       <p><span class="pink">Current Movements about Post-utopianism and Protopianism</span><br />
       <span class="pink">The Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)</span><br />
-      In terms of current movements about post-utopianism and protopianism, these ideas are very effectively defined on the <a href="https://www.zfl-berlin.org/zfl-english.html" rel="noopener noreferrer" style="color: #ff9ed8;">web site of The Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)</a> under its section on Post-socialist world fiction. For the purposes of this brief introduction, post-socialist world fiction is aligned with the concept of post-utopianism and protopian fiction, even where there are clearly significant differences. ZfL nonetheless continues, albeit in an exclusively academic discourse:<br />
-      'Post-socialist world fiction thus negotiates two issues: the political fiction of a better world, increasingly becoming a fantasy estranged from reality, and the artistic production of divergent world concepts that articulate both fascination with everyday life and the horrors of it.'<br />
-      ZfL's wider purpose is defined as a <a href="https://www.br50.org/en/units/social-sciences-and-humanities/members/translate-to-english-leibniz-zentrum-fuer-literatur-und-kulturforschung-zfl" rel="noopener noreferrer" style="color: #ff9ed8;">humanities institute for literary studies in interdisciplinary contexts that draw from a cultural studies framework</a>. Its methods also engage with the structural transformations within historical-hermeneutic subject areas that have taken place in recent decades. In contrast to the study of literature at universities, predominantly organized by nationality, the ZfL fosters a broad concept of literature. It uses interdisciplinary tools to fundamentally question the etiology of various literary concepts, their potential for the future, and the relationship between literature and other arts or cultural practices. This is carried out in three program areas History of Theory, World Literature, Knowledge of Life, and in the Focus Projects. Literature remains a primary object of investigation in all areas, while opening up new epistemological fields, new modes of knowledge, and new sets of questions in other disciplines.</p>
+      In terms of current movements about post-utopianism and protopianism, these ideas are very effectively defined on the <a href="https://www.zfl-berlin.org/zfl-english.html" style="color: #ff9ed8;">web site of The Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)</a> under its section on Post-socialist world fiction. For the purposes of this brief introduction, post-socialist world fiction is aligned with the concept of post-utopianism and protopian fiction, even where there are clearly significant differences. ZfL nonetheless continues, albeit in an exclusively academic discourse:<br />
+      ‘Post-socialist world fiction thus negotiates two issues: the political fiction of a better world, increasingly becoming a fantasy estranged from reality, and the artistic production of divergent world concepts that articulate both fascination with everyday life and the horrors of it.’<br />
+      ZfL’s wider purpose is defined as a <a href="https://www.br50.org/en/units/social-sciences-and-humanities/members/translate-to-english-leibniz-zentrum-fuer-literatur-und-kulturforschung-zfl" style="color: #ff9ed8;">humanities institute for literary studies in interdisciplinary contexts that draw from a cultural studies framework</a>. Its methods also engage with the structural transformations within historical-hermeneutic subject areas that have taken place in recent decades. In contrast to the study of literature at universities, predominantly organized by nationality, the ZfL fosters a broad concept of literature. It uses interdisciplinary tools to fundamentally question the etiology of various literary concepts, their potential for the future, and the relationship between literature and other arts or cultural practices. This is carried out in three program areas History of Theory, World Literature, Knowledge of Life, and in the Focus Projects. Literature remains a primary object of investigation in all areas, while opening up new epistemological fields, new modes of knowledge, and new sets of questions in other disciplines.</p>
       <p><span class="pink">Utopian imagination and Eastern European literature at Tampere University</span><br />
-      World literature is also a key component in the <a href="https://projects.tuni.fi/afterutopia/" rel="noopener noreferrer" style="color: #ff9ed8;">research project at Tampere University on Utopian imagination and Eastern European literature</a>, where the perspective is also emphatically stated as being from a world perspective.</p>
+      World literature is also a key component in the <a href="https://projects.tuni.fi/afterutopia/" style="color: #ff9ed8;">research project at Tampere University on Utopian imagination and Eastern European literature</a>, where the perspective is also emphatically stated as being from a world perspective.</p>
       <p><span class="pink">Analysis</span><br />
       Futuristic visions are then at the very least encouraged in some schools of thought to flow from multiple perspectives, and in the context of the definitions of ZfL, might be lacking in clarity or realistic possibility or both. Perhaps the present nature of some futuristic visions as either lucid or fragmented begins at least to become clear: the world perspective legitimately adds to and enhances the Anglophone approach, but surely expands it way beyond conventional thoughts about manageable scale; leading utopian studies writers like Ruth Levitas and Tom Moylan have already extensively researched notions of the abstract in terms of envisioning, and see the abstraction of utopian visions as a necessary method, possibly accounting for a disconnection in terms of some visions.</p>
       <p>There are other issues that are perhaps not readily flowing from the definitions of ZfL in terms of current problems or approaches. Contemporary literature itself, albeit perhaps slowly redirecting or reforming from the unreadable excesses of many post-modernistic forms, can hardly be said to have returned via meta-modernism to a realist approach, even where new realism is a strong contender in amongst the less experimental forms that result from contemporary new formalist approaches in fiction, whereby classical form continues to be adapted but is not 100% abandoned; experimental forms of writing of course remain very strong, with a continued concentration on fragmentary forms of writing in the endless pursuit of a replication or mirroring or projection of the inner psychological experience, even where some argue fiction ultimately then becomes at best too difficult or at worse impossible to read.</p>
       <p>So as the world starts to radically change, with new populist and indeed far right movements across Europe and the US, a 21st century genocide in Israel, and at least 350,000 dead in the Ukraine war in Eastern Europe, the world begins in places to fragment before our very eyes. Is fragmentation the way forward, certainly as Tampere University appears to state, in terms of fragmented forms in fiction providing the best way forward for those from Ukraine, Poland and Hungary, for example, and their post-utopian or protopian visions, or is it time to be more clear-cut, less experimental, and more realist, as ZfL might argue?</p>
       <p>Even a brief examination of recent academic opinion in terms of futurism and utopianism can show a persistent focus on non-binary theory, for example, which as a theory so easily identifies with fragmented or fluid forms. Of course, it is virtually impossible not to support such ideologies, as clearly the absolute evidence of the harsh reality of the binary opposition that exists in, say, the Russia versus US conflict, or the Palestine versus Israel one, is irrefutable.</p>
       <p>Contemporary non-binary ideology in geopolitical contexts or arguments can however make it hard to decipher reality from fantasy in the context of non-superpowers and ideas of the non-binary filtering even into concepts of the future in terms of geopolitical conflicts and tensions and gender theory itself: impending narratives about non-binary transitioning states, even when caught up in bloody wars, do not seem so far off in current academic discourse, and one has to wonder how extreme notions of fluidity or non-binary national identity might add to coherent and clear imaginings of what might be feasible for the future, as discourse becomes so entrenched in hazy or blurry ideas and so distant in terms of clarity from what might be truly achievable.</p>
-      <p>Or is it that a fluid state in terms of a utopian nation is possible? Certainly in places like Northern Ireland, for example, where some people often do not want to identify as either nationalist or unionist - the two binary states of being in terms of national identity - the idea of the non-binary in terms of political identity becomes unequivocally relevant and important – unless of course it can be defined or ought to be defined as something else, like a third way, and concepts of the non-binary are not the most useful way of analysing the issues, taking into account the polemical positions ideologies of the binary and the non-binary sometimes present with. It is clear at the least that such concepts in terms of identity politics can over-complicate a vision of the future, where in the polarised world today it is virtually impossible to even envision how different ethnicities can live together in the future, let alone also in terms of different ethnicities and different political views, and let alone again in terms of different ethnicities, identifying even in more traditional non-conformist parameters, in terms of sexuality, and let alone again different ethnicities and sexualities and political viewpoints co-existing while ideas of children, for example, transitioning, are also tolerated. These ideas are already so complex: add fragmentation of form, as well as content, they themselves become impossible to decipher even before futuristic notions of virtual reality, digital currencies, new capitalist dictatorships, possible socialistic utopias, to name just a few, are grappled with.</p>
+      <p>Or is it that a fluid state in terms of a utopian nation is possible? Certainly in places like Northern Ireland, for example, where some people often do not want to identify as either nationalist or unionist - the two binary states of being in terms of national identity - the idea of the non-binary in terms of political identity becomes unequivocally relevant and important – unless of course it can be defined or ought to be defined as something else, like a third way, and concepts of the non-binary are not the most useful way of analysing the issues, taking into account the polemical positions ideologies of the binary and the non-binary sometimes present with. It is clear at the least that such concepts in terms of identity politics can over-complicate a vision of the future, where in the polarised world today it is virtually impossible to even envision how different ethnicities can live together in the future, let alone also in terms of different ethncities and different political views, and let alone again in terms of different ethnicities, identifying even in more traditional non-conformist parameters, in terms of sexuality, and let alone again different ethnicities and sexualities and political viewpoints co-existing while ideas of children, for example, transitioning, are also tolerated. These ideas are already so complex: add fragmentation of form, as well as content, they themselves become impossible to decipher even before futuristic notions of virtual reality, digital currencies, new capitalist dictatorships, possible socialistic utopias, to name just a few, are grappled with.</p>
     </div>
   </section>
 </div>
 </div>
 
-<div class="page" id="protopian-stories" role="region" aria-label="Protopian Stories Section">
+<div class="page" id="protopian-stories">
 <div class="section section-blue">
   <section class="reading-list-section">
     <h2 class="pink">Protopian Stories</h2>
-    <p>Coming soon: Curated protopian stories blending optimism and realism. Stay tuned!</p>
+    <p>coming soon...</p>
   </section>
 </div>
 </div>
 
-<div class="page" id="digital-protopias" role="region" aria-label="Digital Protopias Section">
+<div class="page" id="digital-protopias">
 <div class="section section-blue">
   <div class="box-container">
     <div class="box red-box"><a href="#digital-protopias-detail" style="text-decoration: none; color: inherit;">Digital Protopias</a></div>
@@ -493,20 +487,20 @@ h2 {
 </div>
 </div>
 
-<div class="page" id="digital-protopias-detail" role="region" aria-label="Digital Protopias Detail Section">
+<div class="page" id="digital-protopias-detail">
 <div class="section section-blue">
-  <p>Coming soon: Explore digital projects embodying protopian principles. Stay tuned!</p>
+  <!-- Blank page ready for your content; no boxes here -->
 </div>
 </div>
 
-<div class="page" id="protopian-media" role="region" aria-label="Protopian Media Section">
+<div class="page" id="protopian-media">
 <div class="section section-blue">
   <div class="video-section">
     <h2 class="pink">prototypes</h2>
     <div class="video-embed">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/TsB0tK44AQI" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" rel="noopener noreferrer" style="color: #FFC0CB;">here</a>.</p>
+    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/TsB0tK44AQI" target="_blank" style="color: #FFC0CB;">here</a>.</p>
   </div>
 </div>
 
@@ -514,7 +508,7 @@ h2 {
   <section class="video-section">
     <h2 class="pink">kevin kelly</h2>
     <div class="video-embed">
-      <iframe loading="lazy" src="https://content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
+      <iframe src="https://content.jwplatform.com/players/l3m8aT0d-FvQKszTI.html" width="640" height="360" frameborder="0" scrolling="auto"></iframe>
     </div>
   </section>
 </div>
@@ -523,51 +517,51 @@ h2 {
   <section class="video-section">
     <h2 class="pink">post-scarcity</h2>
     <div class="video-embed">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/GqYyQcGQa2c" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/GqYyQcGQa2c" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/GqYyQcGQa2c" target="_blank" rel="noopener noreferrer" style="color: #FFC0CB;">here</a>.</p>
+    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/shorts/GqYyQcGQa2c" target="_blank" style="color: #FFC0CB;">here</a>.</p>
   </section>
 </div>
     <div class="section section-blue">
   <section class="video-section">
     <h2 class="pink">explaining capitalist realism, mark fisher</h2>
     <div class="video-embed">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/mhDKIjyFYNM" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/mhDKIjyFYNM" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p>If the embed doesn't load, view the video <a href="https://youtu.be/mhDKIjyFYNM?si=WNxboJd82GyirTqb" target="_blank" rel="noopener noreferrer" style="color: #FFC0CB;">here</a>.</p>
+    <p>If the embed doesn't load, view the video <a href="https://youtu.be/mhDKIjyFYNM?si=WNxboJd82GyirTqb" target="_blank" style="color: #FFC0CB;">here</a>.</p>
   </section>
 </div>
     <div class="section section-blue">
   <section class="video-section">
     <h2 class="pink">a day in 2030</h2>
     <div class="video-embed">
-      <iframe loading="lazy" src="https://www.youtube.com/embed/FySlbXknr2k" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/FySlbXknr2k" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/watch?v=FySlbXknr2k" target="_blank" rel="noopener noreferrer" style="color: #FFC0CB;">here</a>.</p>
+    <p>If the embed doesn't load, view the video <a href="https://www.youtube.com/watch?v=FySlbXknr2k" target="_blank" style="color: #FFC0CB;">here</a>.</p>
   </section>
 </div>
 </div>
 
-<div class="page" id="reading-list" role="region" aria-label="Reading List Section">
+<div class="page" id="reading-list">
 <div class="section section-blue">
   <section class="reading-list-section">
     <h2 class="pink">reading list</h2>
-    <p>Coming soon: Curated books on protopian futures. Stay tuned!</p>
+    <p>coming soon...</p>
   </section>
 </div>
 </div>
 
-<div class="page" id="links" role="region" aria-label="Links Section">
+<div class="page" id="links">
 <div class="section section-blue">
   <section class="links-section">
-    <h2 class="pink"><a href="https://www.nytimes.com/2023/03/14/special-series/protopia-movement.html" rel="noopener noreferrer" style="color: #FFC0CB; text-decoration: none;">Forget Utopia. Ignore Dystopia. Embrace Protopia! - The New York Times</a></h2>
+    <h2 class="pink"><a href="https://www.nytimes.com/2023/03/14/special-series/protopia-movement.html" style="color: #FFC0CB; text-decoration: none;">Forget Utopia. Ignore Dystopia. Embrace Protopia! - The New York Times</a></h2>
     <p>This article explores protopia, a concept coined by Kevin Kelly in 2010 that offers a middle ground between utopian and dystopian visions of the future.</p>
     <p><span class="pink">The Core Idea:</span> Rather than imagining perfect societies (utopias) or catastrophic ones (dystopias), protopia describes incremental progress—about 1% improvement yearly—that compounds over time into meaningful change. Kelly argues this is already happening through technological advancement.</p>
     <p><span class="pink">Why It Matters:</span> The protopian framework addresses a flaw in utopian thinking: what constitutes a utopia for some groups has historically meant dystopia for others. Protopia offers a more realistic and inclusive path forward.</p>
     <p><span class="pink">Different Interpretations:</span> While Kelly sees protopia as a natural product of technological progress, other advocates emphasize different priorities. Monika Bielskyte, founder of Protopia Futures, argues that progress must be deliberately inclusive of marginalized communities and address social, cultural, and political issues—not just rely on technology as a solution. Micha Narberhaus, founder of Protopia Lab (a nonprofit based in Barcelona), frames protopia as an alternative to divisive activism. Zev Paiss runs Protopian Futures, a website highlighting existing sustainable solutions to real-world problems.</p>
     <p><span class="pink">Practical Application:</span> Bielskyte works with filmmakers (including on "Black Panther: Wakanda Forever") to integrate protopian values into storytelling and media. She also delivered a keynote address at the Ada Lovelace Festival 2022 in Berlin, where she advocated for reimagining the metaverse with greater emphasis on inclusivity and sustainability.</p>
     <p>Kelly welcomes these different interpretations, seeing protopia as "a living word" that others can expand and reshape.</p>
-    <h2 class="pink"><a href="https://www.elysian.press/" rel="noopener noreferrer" style="color: #FFC0CB; text-decoration: none;">The Elysian: Re-imagining Utopian Futures</a></h2>
+    <h2 class="pink"><a href="https://www.elysian.press/" style="color: #FFC0CB; text-decoration: none;">The Elysian: Re-imagining Utopian Futures</a></h2>
     <p>This Substack publication by Elle Griffin explores utopian ideas through essays, fiction, and humanist philosophy, reimagining the future of capitalism, governance, and society.</p>
     <p><span class="pink">The Core Idea:</span> Utopia is redefined as an achievable, evolving dream of incremental progress—aligning closely with protopia as gradual betterment—rather than an unattainable perfect endpoint.</p>
     <p><span class="pink">Why It Matters:</span> It shifts focus from dystopian pessimism to optimistic visions, inspiring collective progress in areas like health, wealth, and equity by broadening the cultural imagination.</p>
@@ -580,93 +574,60 @@ h2 {
 </main>
 </div>
 <script>
-     // Debounce function to prevent rapid clicks (minimal addition for smoothness)
-     function debounce(func, wait) {
-       let timeout;
-       return function (...args) {
-         clearTimeout(timeout);
-         timeout = setTimeout(() => func.apply(this, args), wait);
-       };
-     }
+document.addEventListener('DOMContentLoaded', function() {
+  const sidebarLinks = document.querySelectorAll('.sidebar a');
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href').substring(1);
+      // Update active sidebar link
+      sidebarLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+      // Show target page
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+      const targetPage = document.getElementById(target);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 
-     document.addEventListener('DOMContentLoaded', function() {
-       const sidebarLinks = document.querySelectorAll('.sidebar a');
-       // Handle sidebar link clicks
-       sidebarLinks.forEach(link => {
-         link.addEventListener('click', debounce(function(e) {
-           e.preventDefault();
-           const target = this.getAttribute('href').substring(1);
-           // Update active sidebar link
-           sidebarLinks.forEach(l => l.classList.remove('active'));
-           this.classList.add('active');
-           this.setAttribute('aria-current', 'page');
-           sidebarLinks.forEach(l => l !== this && l.removeAttribute('aria-current'));
-           // Show target page
-           document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-           const targetPage = document.getElementById(target);
-           if (targetPage) {
-             targetPage.classList.add('active');
-             // Update URL and scroll
-             history.pushState({ page: target }, '', `#${target}`);
-             setTimeout(() => targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-           }
-         }, 200));
-       });
+  // Handle non-sidebar internal links (like the red box)
+  document.querySelectorAll('a[href^="#"]:not(.sidebar a)').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href').substring(1);
+      // Show target page (no sidebar update)
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+      const targetPage = document.getElementById(target);
+      if (targetPage) {
+        targetPage.classList.add('active');
+        targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 
-       // Handle non-sidebar internal links (like the red box)
-       document.querySelectorAll('a[href^="#"]:not(.sidebar a)').forEach(link => {
-         link.addEventListener('click', debounce(function(e) {
-           e.preventDefault();
-           const target = this.getAttribute('href').substring(1);
-           // Show target page (no sidebar update)
-           document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-           const targetPage = document.getElementById(target);
-           if (targetPage) {
-             targetPage.classList.add('active');
-             history.pushState({ page: target }, '', `#${target}`);
-             setTimeout(() => targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-           }
-         }, 200));
-       });
-
-       // Handle initial page load with hash
-       const initialHash = window.location.hash.substring(1);
-       if (initialHash) {
-         document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-         const initialPage = document.getElementById(initialHash);
-         if (initialPage) {
-           initialPage.classList.add('active');
-         }
-         // Update sidebar if the hash matches a top-level page
-         const sidebarLink = document.querySelector(`.sidebar a[href="#${initialHash}"]`);
-         if (sidebarLink) {
-           sidebarLinks.forEach(l => l.classList.remove('active'));
-           sidebarLink.classList.add('active');
-           sidebarLink.setAttribute('aria-current', 'page');
-         }
-       }
-
-       // Handle browser back/forward (new: fixes navigation)
-       window.addEventListener('popstate', function(event) {
-         const target = event.state?.page || initialHash || 'home';
-         document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-         const targetPage = document.getElementById(target);
-         if (targetPage) {
-           targetPage.classList.add('active');
-           setTimeout(() => targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-         }
-         const sidebarLink = document.querySelector(`.sidebar a[href="#${target}"]`);
-         if (sidebarLink) {
-           sidebarLinks.forEach(l => l.classList.remove('active'));
-           sidebarLink.classList.add('active');
-           sidebarLink.setAttribute('aria-current', 'page');
-           sidebarLinks.forEach(l => l !== sidebarLink && l.removeAttribute('aria-current'));
-         }
-       });
-     });
-     </script>
+  // Handle initial page load with hash (e.g., direct URL to #digital-protopias-detail)
+  const initialHash = window.location.hash.substring(1);
+  if (initialHash) {
+    document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+    const initialPage = document.getElementById(initialHash);
+    if (initialPage) {
+      initialPage.classList.add('active');
+    }
+    // Update sidebar if the hash matches a top-level page
+    const sidebarLink = document.querySelector(`.sidebar a[href="#${initialHash}"]`);
+    if (sidebarLink) {
+      sidebarLinks.forEach(l => l.classList.remove('active'));
+      sidebarLink.classList.add('active');
+    }
+  }
+});
+</script>
 </body>
 </html>
+
 
 
 
