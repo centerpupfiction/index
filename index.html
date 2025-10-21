@@ -17,18 +17,13 @@ body {
     line-height: 1.8;
     font-size: 18px;
     animation: fadeIn 1.5s ease-in-out;
-}
-
-html {
+}html {
     scroll-behavior: smooth;
-}
-
-@keyframes fadeIn {
+}@keyframes
+ fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-.sidebar {
+}.sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -66,63 +61,43 @@ html {
     background-color: #ff9ed8;
     color: #0a0840;
     border-color: #ff9ed8;
-}
-
-.logo {
+}.logo {
     text-align: center;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
-}
-
-h1 {
+}h1 {
     text-align: center;
     font-weight: 700;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
     font-size: 3em;
-}
-
-h2 {
+}h2 {
     font-size: 2.2em;
-}
-
-.pink {
+}.pink {
     color: #FFC0CB;
     font-weight: 700;
-}
-
-.highlight {
+}.highlight {
     background-color: rgba(255, 192, 203, 0.3);
     padding: 5px 10px;
     border-radius: 4px;
-}
-
-.definitions .pink {
+}.definitions .pink {
     font-size: 1.3em;
     font-weight: 700;
-}
-
-.content-wrapper {
+}.content-wrapper {
     max-width: 1000px;
     margin: 0 auto;
     border-left: 1px solid white;
     border-right: 1px solid white;
     box-sizing: border-box;
-}
-
-.section {
+}.section {
     padding: 20px;
     min-height: 50vh;
-}
-
-.page {
+}.page {
     display: none;
 }
 .page.active {
     display: block;
-}
-
-.section-with-image {
+}.section-with-image {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -131,9 +106,7 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
-}
-
-/* --- REPLACED: overlay rules (inserted exactly as requested) --- */
+}/* --- REPLACED: overlay rules (inserted exactly as requested) --- */
 .overlay {
     position: absolute;
     top: 0;
@@ -146,9 +119,7 @@ h2 {
     align-items: flex-start;
     color: white;
     padding: 40px 40px 20px 60px;
-}
-
-/* Move the text block to the right so it sits over the sky area */
+}/* Move the text block to the right so it sits over the sky area */
 .overlay h1 {
     font-size: 2.4em;
     font-weight: 800;
@@ -165,32 +136,25 @@ h2 {
     text-align: left;
     line-height: 1.4;
     max-width: 60%;
-    word-wrap: break-word;
-
-    /* the key new part */
-    margin-left: 40%;  
-}
-
-/* On smaller screens, reset so text recenters */
-@media (max-width: 1024px) {
+    word-wrap: break-word;/* the key new part */
+margin-left: 40%;  }/* On smaller screens, reset so text recenters /
+@media
+ (max-width: 1024px) {
     .overlay h1 {
         margin-left: 10%;
         max-width: 75%;
     }
 }
-@media (max-width: 768px) {
+@media
+ (max-width: 768px) {
     .overlay h1 {
         margin-left: 5%;
         max-width: 85%;
     }
 }
-/* --- end replaced section --- */
-
-.overlay h1 .title-pink {
+/ --- end replaced section --- */.overlay h1 .title-pink {
     color: #ff9ed8;
-}
-
-.definition {
+}.definition {
     margin-top: 10px;
     max-width: 85%;
     font-size: 1.2em;
@@ -201,34 +165,22 @@ h2 {
     text-align: left;
     color: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-
-.definition .term {
+}.definition .term {
     color: #ff9ed8;
     font-weight: 700;
-}
-
-.definition .desc-highlight {
+}.definition .desc-highlight {
     color: #c8d7ff;
     font-weight: 600;
-}
-
-.section-blue {
+}.section-blue {
     background-color: #101266;
-}
-
-.home-section, .definitions, .links-section, .reading-list-section {
+}.home-section, .definitions, .links-section, .reading-list-section {
     max-width: 1000px;
     margin: 0 auto 60px;
     line-height: 1.6;
     animation: fadeIn 2.5s ease-in-out;
-}
-
-.home-section {
+}.home-section {
     text-align: center;
-}
-
-.definitions p, .links-section p, .reading-list-section p {
+}.definitions p, .links-section p, .reading-list-section p {
     margin-bottom: 30px;
     padding: 20px;
     border-left: 4px solid #FFC0CB;
@@ -237,22 +189,16 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
     font-weight: 700;
-}
-
-.definitions .highlight {
+}.definitions .highlight {
     font-family: 'Orbitron', monospace;
     font-weight: 700;
     letter-spacing: 1px;
-}
-
-.video-section {
+}.video-section {
     max-width: 1000px;
     margin: 40px auto 0;
     text-align: center;
     animation: fadeIn 3s ease-in-out;
-}
-
-.video-embed {
+}.video-embed {
     width: 100%;
     max-width: 800px;
     height: 0;
@@ -272,22 +218,16 @@ h2 {
     width: 100%;
     height: 100%;
     border: none;
-}
-
-.links-section h2, .reading-list-section h2 {
+}.links-section h2, .reading-list-section h2 {
     text-align: center;
     font-size: 1.8em;
-}
-
-.box-container {
+}.box-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.box {
+}.box {
     flex: 1;
     height: 300px;
     display: flex;
@@ -298,17 +238,12 @@ h2 {
     font-weight: bold;
     text-align: center;
     border-radius: 8px;
-}
-
-.red-box {
+}.red-box {
     background-color: #E53935;
-}
-
-.dark-blue-box {
+}.dark-blue-box {
     background-color: #1976D2;
-}
-
-@media (max-width: 768px) {
+}@media
+ (max-width: 768px) {
     body {
         padding: 20px 20px 20px 0;
     }
@@ -343,12 +278,12 @@ h2 {
     h2 {
         font-size: 1.8em;
     }
-    /* keep small-screen overlay padding and alignment (matches replaced rules above) */
+    /* keep small-screen overlay padding and alignment (matches replaced rules above) /
     .overlay {
         padding: 10px;
         padding-top: 30px;
-        align-items: flex-start;  
-        padding-left: 5%;  
+        align-items: flex-start;
+        padding-left: 5%;
     }
     .overlay h1 {
         font-size: 1.5em;
@@ -357,7 +292,7 @@ h2 {
         max-width: 85%;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        /* margin-left will be overridden by the earlier media queries for 768px */
+        / margin-left will be overridden by the earlier media queries for 768px */
     }
     .box-container {
         flex-direction: column;
@@ -366,8 +301,7 @@ h2 {
         height: 200px;
     }
 }
-</style>
-</head>
+</style></head>
 
 <body>
 <nav class="sidebar">
@@ -413,15 +347,18 @@ h2 {
         </svg>
       </div>
 
-      <h1>
-        Welcome to Protopia,<br>
-        the Future Island,<br>
-        of Achievability,<br>
-        where Writing fuses<br>
-        with Concepts and Endeavours.
-      </h1>
-    </section>
-  </div>
+  <h1>
+    Welcome to Protopia,
+
+    the Future Island,
+
+    of Achievability,
+
+    where Writing fuses
+
+    with Concepts and Endeavours.
+  </h1>
+</section>  </div>
 </div>
 </div>
 
@@ -593,50 +530,64 @@ h2 {
 
 <div class="page" id="contact">
 <div class="section section-blue">
-  <h2 class="pink">Contact</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">contact</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="protopian-art">
 <div class="section section-blue">
-  <h2 class="pink">Protopian Art</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">protopian art</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="protopian-events">
 <div class="section section-blue">
-  <h2 class="pink">Protopian Events</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">protopian events</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="blog">
 <div class="section section-blue">
-  <h2 class="pink">Blog</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">blog</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="reviews">
 <div class="section section-blue">
-  <h2 class="pink">Reviews</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">reviews</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="articles">
 <div class="section section-blue">
-  <h2 class="pink">Articles</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">articles</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
 <div class="page" id="business-plan">
 <div class="section section-blue">
-  <h2 class="pink">Business Plan</h2>
-  <p>coming soon...</p>
+  <section class="reading-list-section">
+    <h2 class="pink">business plan</h2>
+    <p>coming soon...</p>
+  </section>
 </div>
 </div>
 
@@ -675,9 +626,7 @@ document.addEventListener('DOMContentLoaded', function() {
         targetPage.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
-  });
-
-  // Handle initial page load with hash (e.g., direct URL to #digital-protopias-detail)
+  });  // Handle initial page load with hash (e.g., direct URL to #digital-protopias-detail)
   const initialHash = window.location.hash.substring(1);
   if (initialHash) {
     document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
@@ -686,13 +635,13 @@ document.addEventListener('DOMContentLoaded', function() {
       initialPage.classList.add('active');
     }
     // Update sidebar if the hash matches a top-level page
-    const sidebarLink = document.querySelector(`.sidebar a[href="#${initialHash}"]`);
+    const sidebarLink = document.querySelector(.sidebar a[href="#${initialHash}"]);
     if (sidebarLink) {
       sidebarLinks.forEach(l => l.classList.remove('active'));
       sidebarLink.classList.add('active');
     }
   }
 });
-</script>
-</body>
+</script></body>
 </html>
+
